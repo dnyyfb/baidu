@@ -15,5 +15,5 @@
 * 上传文件时，请在注释里添加文件主要内容和by。
 * 请勿将页面的文案修改的过于生硬。毕竟这是个梗，好玩最重要。
 ## 百毒的其他项目
-百毒Windows客户端 https://github.com/DnyyfbStudio/baidu-windows
+百毒Windows客户端 https://github.com/DnyyfbStudio/baidu-windows<br>
 除以上列出的这些项目外，其他均不是由电脑音乐发布工作室制作。
