@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>把百毒设为尾页--添乱中心页面</title>
+<style type="text/css">
+body{font-family:Arial, Helvetica, sans-serif;font-size:14px;width:980px;margin:0 auto;padding:6px 0 0;}
+img,h3,h4,h2,h6{border:0;margin:0;padding:0;}
+.r1,.r2{height:1px;display:block;border-left:1px solid #e5ecfc;border-right:1px solid #e5ecfc;background:#e5ecfc;overflow:hidden;margin:0 2px}   
+.r2{height:1px;display:block;border-left:1px solid #e5ecfc;border-right:1px solid #e5ecfc;background:#f4f9ff;overflow:hidden;margin:0 1px;}   
+.con{font-size:12px;font-weight:bold;border-left:1px solid #e5ecfc;border-right:1px solid #e5ecfc;background:#f4f9ff;width:978px;}  
+.logo{float:left;}
+.nav{float:right;width:832px;padding:0 10px;margin:12px 0 0 0;background:#e4ebfb;height:25px;line-height:25px;}
+.cl{clear:both;font-size:0px;height:0px;line-height:0px;overflow:hidden;}
+.nav a{float:right;color:#0a348a;}
+.nav strong{float:left;}
+.crumb{color:#000ccc;height:18px;line-height:18px;margin-top:10px;font-size:12px;}
+.crumb a{text-decoration:none;}
+.crumb span{color:#000000;}
+h3{font-size:18px;color:#000000;margin:28px 0 18px;}
+h4{font-weight:normal;font-size:14px;margin-bottom:15px;}
+
+.brs,.brs a,.brs a.ff_icon,.brs a.s360_icon,.brs a.aoyou_icon,.brs a.sougou_icon,.brs a.qq_icon,.brs a.tt_icon,.brs a.chrome_icon,.brs a.s360jishu_icon,.brs a.world_jishu_icon,.brs a.opera_icon,.brs a.world_icon,.brs a.safari_icon,.brs a.green_icon,.brs a.kr_icon,,.brs a.bdbrowser_icon{height:36px;line-height:36px;}
+.brs a{font-size:16px;padding-left:40px;background:url(img/ie.gif) no-repeat 10px center;display:inline-block;color:#000000;text-decoration:none;width:938px;}
+.brs a.ff_icon{background:url(img/firefox.gif) no-repeat 10px center;}
+.brs a.s360_icon{background:url(img/360.gif) no-repeat 10px center;}
+.brs a.aoyou_icon{background:url(img/aoyou3.gif) no-repeat 10px center;}
+.brs a.sougou_icon{background:url(img/sougou.gif) no-repeat 10px center;}
+.brs a.qq_icon{background:url(img/qq.gif) no-repeat 10px center;}
+.brs a.tt_icon{background:url(img/tt.gif) no-repeat 10px center;}
+.brs a.chrome_icon{background:url(img/chrome.gif) no-repeat 10px center;}
+.brs a.s360jishu_icon{background:url(img/360jishu.gif) no-repeat 10px center;}
+.brs a.world_jishu_icon{background:url(img/world_jishu.gif) no-repeat 10px center;}
+.brs a.opera_icon{background:url(img/opera.gif) no-repeat 10px center;}
+.brs a.world_icon{background:url(img/world.gif) no-repeat 10px center;}
+.brs a.safari_icon{background:url(img/safari.gif) no-repeat 10px center;}
+.brs a.green_icon{background:url(img/green.gif) no-repeat 10px center;}
+.brs a.kr_icon{background:url(img/kr.gif) no-repeat 10px center;}
+.brs a.bdbrowser_icon{background:url(img/bdbrowser_new.png) no-repeat 10px center;}
+.tishi_con{border:1px solid #e5ecfb;border-width:0 1px 0;}
+.tool_con{background:url(img/tuijian_bg.gif) repeat-x;height:50px;line-height:50px;}
+.tool_con2{background:url(img/tuijian_bg.gif) repeat-x left bottom;height:10px;line-height:30px;}
+#set_auto1,#set_auto2{display:none;}
+.tool_kj,.tool_sz{float:left;padding-left:30px;}
+.tool_kj img,.tool_sz img{vertical-align:middle;margin-right:10px;cursor:pointer;}
+.tool_kj{width:455px;}
+.tool_sz{border-left:1px solid #e7e7e7;display:block;}
+.tool_sz_nodis{display:none;}
+h6{font-size:14px;color:#000000;margin:0 0 20px 0;}
+.detail{width:918px;padding:30px 30px 15px;}
+.tip{margin-top:15px;color:#666666;}
+#ie,#360,#aoyou,#sougou,#qq,#tt,#firefox,#chrome,#360ji,#world_ji,#opera,#world,
+#safari,#green,#kr,#bdbrowser{cursor:pointer;}
+#ie_con,#aoyou_con,#s360_con,#sougou_con,#qq_con,#tt_con,#s360ji_con,#firefox_con,#chrome_con,#world_ji_con,#opera_con,#world_con,#safari_con,#green_con,#kr_con,#bdbrowser_con{display:none;}
+.sz_qus,.kj_qus{position:relative;background:url(img/question.gif) no-repeat;vertical-align:middle;width:16px;height:16px;display:inline-block;}
+a.kj_qus:hover,a.sz_qus:hover{background:url(img/question_active.gif) no-repeat;}
+.kj_tishi{position:absolute;top:-190px;left:-130px;display:none;}
+.df_ts_ie{position:absolute;top:-165px;left:-158px;display:none;}
+.df_ts_ff{position:absolute;top:-140px;left:-158px;display:none;}
+.mg10{margin-bottom:10px;}
+.arrow,.arrow_open{height:24px;line-height:24px;display:inline-block;margin:-20px 0 0 940px;width:9px;background:url(img/arrow_close.gif) no-repeat;}
+.arrow_open{background:url(img/arrow_open.gif) no-repeat;}
+.kj_bt,a.kj_bt:link,a.kj_bt:visited,a.kj_bt:hover,a.kj_bt:active{background:url(img/kj_bt.gif) no-repeat left center;width:58px;height:27px;line-height:27px;vertical-align:middle;margin-right:10px;display:inline-block;color:#1b1b1b;text-decoration:none;font-size:12px;padding-left:26px;}
+a.kj_bt:visited{color:#014bc6;}
+a.kj_bt:hover{background:url(img/kj_bt_active.gif) no-repeat left center;}
+a.kj_bt:active{color:#014bc6;}
+.uptitle .con,.uptitle .r1,.uptitle .r2{background:#e1ecff}
+.upbg{background:#e1ecff}
+#foot{text-align:center;color:#666666;font-size:12px;margin:20px 0;border-top:1px solid #dddddd;padding-top:20px;}
+#foot a{color:#666666;}
+div img{margin-bottom:15px;}
+.chrome_xz{width:144px;height:29px;background:url(img/chrome_bg.jpg);display:inline-block;color:#fff;font-weight:bold;margin-right:10px;text-indent:30px;text-decoration:none}
+.chrome_txt{padding-left:0px}
+.chrome_txt span{width:5px;height:18px;display:inline-block;background:#47BEE6;margin-left:5px;vertical-align:-2px}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+</head>
+<body>
+<div id="head">
+    <div class="logo"><a href="http://dnyyfb.github.io/baidu/" target="_blank"><img src="./baidu_jgylogo3.gif"></a></div>
+    <div class="nav"><strong id="seth">问题反馈</strong><a href="http://help.baidu.com/question">添乱中心</a><a style="margin:0 10px;">|</a><a href="https://dnyyfb.github.io/baidu/">百毒首页</a></div>
+    <div class="cl"></div>
+    <!--<div class="crumb"><a href="http://dnyyfb.github.io/baidu" target="_blank">百毒首页</a> &gt; <a href="http://dnyyfb.github.io/baidu/search/jiqiao.html" target="_blank">添乱中心</a> &gt; <span>如何把百毒设为尾页</span></div>-->
+</div>
+<h3>百毒网页反馈问题区</h3>
+<h4>在这里您可以反馈在百毒网页遇到的问题，我们将会尽快解决！</h4>
+ 
+<div id="gitalk-container">
+<script type="text/javascript">
+var gitalk = new Gitalk({
+  clientID: '26ff616f299bf60cb054',
+  clientSecret: 'd0a5fe4fad12cb674f00b62379b08a28ee7b45d0',
+  repo: 'BaiduFeedback',
+  owner: 'dnyyfb',
+  admin: ['dnyyfb'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false,  // Facebook-like distraction free mode
+  createIssueManually: false,
+  enableHotKey: true,
+  number: 2,
+  labels: ['bug'],
+  title: '百毒网页反馈问题存储',
+  body: '这里是存储问题的issue'
+})
+
+gitalk.render('gitalk-container')
+</script>
+</div>
+    </div>
+<div id="foot">©2020&nbsp;baidu&nbsp;<a href="http://dnyyfb.github.io/baidu/duty/index.html" target="_blank">免责声明</a></div>
+</div>
+
+<script type="text/javascript">
+(function () {var scriptSrc;if (window.location.protocol==='https:') {scriptSrc='<script  src=\"https://ss2.bdstatic.com/70cFsjip0QIZ8tyhnq/js/tangram-1.3.5.js\"><\/script>'} else {scriptSrc='<script  src=\"http://img.baidu.com/js/tangram-1.3.5.js\"><\/script>'};document.write(scriptSrc);})()
+</script><script src="./tangram-1.js"></script>
+<script type="text/javascript">
+function G(id){
+    return document.getElementById(id);
+}
+function addEV(o, e, f){
+    if(window.attachEvent){
+        o.attachEvent("on" + e, f);
+    }else if(window.addEventListener){ 
+        o.addEventListener(e, f, false);
+    }
+}
+
+function conSwitch(key){
+	var connum = baidu.q("tishi_con");
+	var preconnums = baidu.q("con");
+	var _display = G(key + "_con").style.display;
+	var _arrow = G(key).getElementsByTagName("span")[0].className;
+	for(var i=0;i<connum.length;i++){
+		if(connum[i].style.display=="block"){
+		connum[i].style.display = "none";
+		}
+	}
+	for(var j = 0; j < preconnums.length; j++){
+		if(preconnums[j].getElementsByTagName("span")[0].className == "arrow_open"){
+			preconnums[j].getElementsByTagName("span")[0].className = "arrow";
+		}
+	}
+	G(key + "_con").style.display = _display == "block"?"none":"block";
+	G(key).getElementsByTagName("span")[0].className = _arrow == "arrow"?"arrow_open":"arrow";
+}
+
+function showTip(obj){
+	G(obj+"_tishi").style.display = "block";
+}
+
+function hidTip(obj){
+	G(obj+"_tishi").style.display = "none";
+}
+
+(function(){
+	var se = /se /gi.test(navigator.userAgent);
+	var wldji = /AppleWebKit/gi.test(navigator.userAgent) && /theworld/gi.test(navigator.userAgent);
+	var wld = /theworld/gi.test(navigator.userAgent);
+	var s360 = /360se/gi.test(navigator.userAgent);
+	var s360ji = /360chrome/gi.test(navigator.userAgent);
+	var greenb = /greenbrowser/gi.test(navigator.userAgent);
+	var qqb = /qqbrowser/gi.test(navigator.userAgent);
+	var ttb = /tencenttraveler/gi.test(navigator.userAgent);
+	var maxth = /maxthon/gi.test(navigator.userAgent);
+	var krb = /krbrowser/gi.test(navigator.userAgent);
+	var sb = false;
+	try{ 
+		sb = +external.twGetVersion(external.twGetSecurityID(window)).replace(/\./g,"")>1013;
+	}catch(e){}
+	if(/MSIE/gi.test(navigator.userAgent) && !maxth && !wldji && !wld && !s360 && !s360ji && !greenb && !qqb && !ttb && !maxth && !krb && !sb){
+		G("set_auto1").style.display = "block";
+	}
+	if(/firefox/gi.test(navigator.userAgent)){
+		G("set_auto2").style.display = "block";
+	}
+})();
+
+function showAns(obj){
+	if(/MSIE/gi.test(navigator.userAgent)){
+		G(obj+"_ie_tishi").style.display = "block";
+	}else{
+		G(obj+"_ff_tishi").style.display = "block";
+	}
+}
+
+function hidAns(obj){
+	if(/MSIE/gi.test(navigator.userAgent)){
+		G(obj+"_ie_tishi").style.display = "none";
+	}else{
+		G(obj+"_ff_tishi").style.display = "none";
+	}
+}
+
+
+function setDefault(){
+	if(/MSIE 7.0/gi.test(navigator.userAgent)){
+		window.external.AddSearchProvider('http://dnyyfb.github.io/baidu/cache/sethelp/xml/baiduie7.xml');
+	}else if(/MSIE 8.0/gi.test(navigator.userAgent)){
+		window.external.AddSearchProvider('http://dnyyfb.github.io/baidu/cache/sethelp/xml/baidu.xml');
+	}else if(/MSIE 9.0/gi.test(navigator.userAgent)){
+		window.external.AddSearchProvider('http://dnyyfb.github.io/baidu/cache/sethelp/xml/baidu.xml');
+	}else{
+		window.external.AddSearchProvider('http://dnyyfb.github.io/baidu/cache/sethelp/xml/baidu.xml');
+	}
+}
+
+
+(function(){
+	var holder = G("holder");
+	 if(/BIDUBrowser/gi.test(navigator.userAgent) && (typeof window.external.GetVersion != "undefined")){
+		G("bdbrowser_con").style.display = "block";
+		holder.insertBefore(G("bdbrowser_con").parentNode,G("label"));
+		G("bdbrowser").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/firefox/gi.test(navigator.userAgent)){
+		G("firefox_con").style.display = "block";
+		holder.insertBefore(G("firefox_con").parentNode,G("label"));
+		G("firefox").getElementsByTagName("span")[0].className = "arrow_open";
+		G("set_auto1").className = "tool_sz_nodis";
+		G("set_auto2").className = "tool_sz";
+	 }else if(/AppleWebKit/gi.test(navigator.userAgent) && /theworld/gi.test(navigator.userAgent)){
+	 	G("world_ji_con").style.display = "block";
+		holder.insertBefore(G("world_ji_con").parentNode,G("label"));
+		G("world_ji").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/theworld/gi.test(navigator.userAgent)){
+	 	G("world_con").style.display = "block";
+		holder.insertBefore(G("world_con").parentNode,G("label"));
+		G("world").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if((/qqbrowser/gi.test(navigator.userAgent)) || (/chrome/gi.test(navigator.userAgent) && /qqbrowser/gi.test(navigator.userAgent))){
+	 	G("qq_con").style.display = "block";
+		holder.insertBefore(G("qq_con").parentNode,G("label"));
+		G("qq").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/360chrome/gi.test(navigator.userAgent) || (/360/gi.test(navigator.userAgent) && /qihu/gi.test(navigator.userAgent))){
+	 	G("s360ji_con").style.display = "block";
+		holder.insertBefore(G("s360ji_con").parentNode,G("label"));
+		G("s360ji").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/se /gi.test(navigator.userAgent)){
+	 	G("sougou_con").style.display = "block";
+		holder.insertBefore(G("sougou_con").parentNode,G("label"));
+		G("sougou").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/chrome/gi.test(navigator.userAgent)){
+	 	G("chrome_con").style.display = "block";
+		holder.insertBefore(G("chrome_con").parentNode,G("label"));
+		G("chrome").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/opera/gi.test(navigator.userAgent)){
+	 	G("opera_con").style.display = "block";
+		holder.insertBefore(G("opera_con").parentNode,G("label"));
+		G("opera").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/360se/gi.test(navigator.userAgent)){
+	 	G("s360_con").style.display = "block";
+		holder.insertBefore(G("s360_con").parentNode,G("label"));
+		G("s360").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/greenbrowser/gi.test(navigator.userAgent)){
+	 	G("green_con").style.display = "block";
+		holder.insertBefore(G("green_con").parentNode,G("label"));
+		G("green").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/tencenttraveler/gi.test(navigator.userAgent)){
+	 	G("tt_con").style.display = "block";
+		holder.insertBefore(G("tt_con").parentNode,G("label"));
+		G("tt").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/maxthon/gi.test(navigator.userAgent)){
+	 	G("aoyou_con").style.display = "block";
+		holder.insertBefore(G("aoyou_con").parentNode,G("label"));
+		G("aoyou").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/safari/gi.test(navigator.userAgent)){
+	 	G("safari_con").style.display = "block";
+		holder.insertBefore(G("safari_con").parentNode,G("label"));
+		G("safari").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else if(/krbrowser/gi.test(navigator.userAgent)){
+		G("kr_con").style.display = "block";
+		holder.insertBefore(G("kr_con").parentNode,G("label"));
+		G("kr").getElementsByTagName("span")[0].className = "arrow_open";
+	 }else{
+	 	
+	 }
+})();
+
+(function(){
+	for(var i = 1;i < 17; i++){
+		var headeles = G("broswer" + i);
+		headeles.onmouseover = function(){
+			baidu.dom.addClass(this,"uptitle");
+		}
+		headeles.onmouseout = function(){
+			baidu.dom.removeClass(this,"uptitle");
+		}
+	}
+})();
+</script>
+<script>
+function nsclick(fm){
+	var img = window["BD_PS_SUG" + (+new Date())] = new Image();
+    var protocol = window.location.protocol === "https:" ? "https:" : "http:";
+    if (protocol === "https:") {
+        img.src = protocol + "//sp1.baidu.com/8qUJcD3n0sgCo2Kml5_Y_D3/v.gif?pid=201&pj=set_help&fm=" + fm + "&t=" + (+new Date());
+    } else {
+        img.src = protocol + "//nsclick.baidu.com/v.gif?pid=201&pj=set_help&fm=" + fm + "&t=" + (+new Date());
+    };
+}
+nsclick('page');
+</script>
+
+</body></html>
